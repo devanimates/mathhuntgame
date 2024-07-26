@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Switcher</title>
+    <link href="style.css" rel="styleSheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="">Games</a>
+          <ul>
+            <li><a href="math.html">Anagram Hunt</a></li>
+            <li><a href="math.html">Math Facts Practice</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="quote" id="quote">
+      "The only way to do great work is to love what you do." - Steve Jobs
+    </div>
+  </header>
+
+<div class="form-container">
+    <form id="login-form">
+        <h2>Login</h2>
+        <input style="border-radius: 8px; box-shadow: blue;" type="text" placeholder="Username" required>
+        <input style="border-radius: 8px; box-shadow: blue;" type="password" placeholder="Password" required>
+        <button style="border-radius: 8px; box-shadow: blue;" type="submit">Login</button>
+        <p>Need an account? <a href="#" onclick="showRegisterForm(); return false;">Register</a></p>
+    </form>
+
+    <form id="register-form" style="display:none">
+        <h2>Register</h2>
+        <input style="border-radius: 8px; box-shadow: blue;" type="text" placeholder="Username" required>
+        <inputstyle="border-radius: 8px; box-shadow: blue;" type="email" placeholder="Email" required>
+        <inputstyle="border-radius: 8px; box-shadow: blue;" type="password" placeholder="Password" required>
+        <input style="border-radius: 8px; box-shadow: blue;" type="text" placeholder="How did you hear about us?" required>
+        <textarea  style="border-radius: 8px; box-shadow: blue;"placeholder="Comments"></textarea>
+        <input style="border-radius: 8px; box-shadow: blue;" type="tel" placeholder="Contact information" required>
+        <button style="border-radius: 8px; box-shadow: blue;" type="submit">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLoginForm(); return false;">Login</a></p>
+    </form>
+</div>
+
+<footer>
+  <div class="lower-nav">
+    <a href="contact-us.html" class="nav-item">
+      <img src="contactus.jpg" alt="Contact Us" class="nav-logo">
+      Contact Us
+    </a>
+    <a href="https://instagram.com" class="nav-item">
+      <img src="instagram.jpg" alt="Instagram" class="nav-logo">
+      Instagram
+    </a>
+    <a href="https://twitter.com" class="nav-item">
+      <img src="twitter.png" alt="Twitter" class="nav-logo">
+      Twitter
+    </a>
+    <a href="https://facebook.com" class="nav-item">
+      <img src="facebook.png" alt="Facebook" class="nav-logo">
+      Facebook
+    </a>
+  </div>
+  <p>&copy; 2024 Games Portal. All rights reserved.</p>
+</footer>
+
+<script>
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+
+    function showRegisterForm() {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+    }
+
+    function showLoginForm() {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+    }
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Login form submitted');
+        setTimeout(() => {
+            loginForm.reset();
+        }, 0);
+    });
+
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Registration form submitted');
+        setTimeout(() => {
+            registerForm.reset();
+        }, 0);
+    });
+</script>
+
+</body>
+</html>

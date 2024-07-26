@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Games Portal</title>
+  <style>
+    
+  </style>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="">Games</a>
+          <ul>
+            <li><a href="math.html">Anagram Hunt</a></li>
+            <li><a href="math.html">Math Facts Practice</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="quote" id="quote">
+      "The only way to do great work is to love what you do." - Steve Jobs
+    </div>
+  </header>
+
+  <main>
+    <h1 style="display: flex; align-items: center; justify-content: center;">Welcome to the Games Portal</h1>
+    <div class="game-listing" style="display:inline-flex; justify-content: center; align-items: center; padding-left: 200px;">
+    
+      <div class="anagram">
+        <h2>Anagram Hunt</h2>
+        <p>Test your word skills in this challenging anagram puzzle game.</p>
+        <button class="gamebutton" onmouseover="this.style.backgroundColor='#008000';" onmouseout="this.style.backgroundColor='#9ef01a';" onclick="redirectToMath()">play</button>
+        
+      </div>
+    </div>
+    <div class="game-listing">
+      
+      <div class="maths">
+        <h2>Math Facts Practice</h2>
+        <p>Improve your math skills with this fun and interactive practice game.</p>
+        <button class="gamebutton" onmouseover="this.style.backgroundColor='#008000';" onmouseout="this.style.backgroundColor='#9ef01a';" onclick="redirectToMath()">play</button>
+        
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="lower-nav">
+      <a href="contact-us.html" class="nav-item">
+        <img src="contactus.jpg" alt="Contact Us" class="nav-logo">
+        Contact Us
+      </a>
+      <a href="https://instagram.com" class="nav-item">
+        <img src="instagram.jpg" alt="Instagram" class="nav-logo">
+        Instagram
+      </a>
+      <a href="https://twitter.com" class="nav-item">
+        <img src="twitter.png" alt="Twitter" class="nav-logo">
+        Twitter
+      </a>
+      <a href="https://facebook.com" class="nav-item">
+        <img src="facebook.png" alt="Facebook" class="nav-logo">
+        Facebook
+      </a>
+    </div>
+    <p>&copy; 2024 Games Portal. All rights reserved.</p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+
+</html>

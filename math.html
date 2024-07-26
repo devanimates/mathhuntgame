@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/styles.css" rel="stylesheet">
+<link href="math.css" rel="stylesheet">
+
+<title>GamePortal</title>
+</head>
+<body class="Play2Learn">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="">Games</a>
+          <ul>
+            <li><a href="math.html">Anagram Hunt</a></li>
+            <li><a href="math.html">Math Facts Practice</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="quote" id="quote">
+      "The only way to do great work is to love what you do." - Steve Jobs
+    </div>
+  </header>
+    <hr>
+<main id="math-facts1">
+    <section id="math-facts">
+        <div>
+        <h3>Math-Facts Practice</h3>
+        </div>
+        <div id="new-header"></div>
+        <div id="select-menu"></div>
+        <div>
+        <label for="operation">Operation:</label>
+        <br>
+        <select name="operation" id="operation">
+            <option value="select-game" id="selectoperation">Select Game</option>
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button type="submit" id="go">Go!</button>
+        </div>
+    <div class="rules">
+        <ol class="list">
+            <li>Select operation</li>
+            <li>Press <strong>Go</strong>.</li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+    </section>
+    <section id="numpad">
+        <div id="times-up">
+            <br>
+            <div id="math-question"></div>
+            <input type="text" id="field" autofocus>
+            <div>
+                <button style="background-color: rgb(91, 231, 91);" class="btn" value="1">1</button>
+                <button style="background-color: rgb(91, 231, 91);"  class="btn" value="2">2</button>
+                <button  style="background-color: rgb(91, 231, 91);"  class="btn" value="3">3</button>
+            </div>
+            <div>
+                <button style="background-color: rgb(91, 231, 91);"  class="btn" value="4">4</button>
+                <button  style="background-color: rgb(91, 231, 91);" class="btn" value="5">5</button>
+                <button  style="background-color: rgb(91, 231, 91);" class="btn" value="6">6</button>
+            </div>
+            <div>
+                <button style="background-color: rgb(91, 231, 91);"  class="btn" value="7">7</button>
+                <button style="background-color: rgb(91, 231, 91);"  class="btn" value="8">8</button>
+                <button style="background-color: rgb(91, 231, 91);"  class="btn" value="9">9</button>
+        </div>
+        <div>
+            <button  style="background-color: rgb(91, 231, 91);"  class="btn" value="0">0</button>
+            <button id="resetbtn" onclick="reset(this)" style="background-color: rgb(15, 199, 15);" >CLEAR</button>
+        <br>
+        </div>
+        </div>
+        <div>
+            <div id="final-score">
+                <p><strong>Score:</strong><span id="score"></span></p>
+        </div>
+        <div>
+            <p id="play-again"><strong>Time Left:</strong><span id="time-left"></span></p>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div id="game-over-div">
+            <p>Times Up!</p>
+            <p id="high-score"></p>
+        <br>
+        <button id="play-again-btn">Play Again!</button>
+        </div>
+    </section>
+</main>
+<hr>
+<footer>
+  <div class="lower-nav">
+    <a href="contact-us.html" class="nav-item">
+      <img src="contactus.jpg" alt="Contact Us" class="nav-logo">
+      Contact Us
+    </a>
+    <a href="https://instagram.com" class="nav-item">
+      <img src="instagram.jpg" alt="Instagram" class="nav-logo">
+      Instagram
+    </a>
+    <a href="https://twitter.com" class="nav-item">
+      <img src="twitter.png" alt="Twitter" class="nav-logo">
+      Twitter
+    </a>
+    <a href="https://facebook.com" class="nav-item">
+      <img src="facebook.png" alt="Facebook" class="nav-logo">
+      Facebook
+    </a>
+  </div>
+  <p>&copy; 2024 Games Portal. All rights reserved.</p>
+</footer>
+<script defer src="math.js"></script>
+</body>
+</html>

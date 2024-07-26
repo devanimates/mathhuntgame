@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Games Portal</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="">Games</a>
+          <ul>
+            <li><a href="math.html">Anagram Hunt</a></li>
+            <li><a href="math.html">Math Facts Practice</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="quote" id="quote">
+      "The only way to do great work is to love what you do." - Steve Jobs
+    </div>
+  </header>
+
+  <main>
+    <h1 style="justify-content: center; align-items: center; display: flex;">Contact Us</h1>
+    <form id="contact-form" action="javascript:void(0)">
+      <label for="email">Email:</label>
+      <input style="border-radius: 8px; box-shadow: blue;" type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input  style="border-radius: 8px; box-shadow: blue;" type="text" id="subject" name="subject" required>
+
+      <label for="message">Message:</label>
+      <textarea style="border-radius: 8px; box-shadow: blue;" id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" style="border-radius: 10px; box-shadow: 0cqh;">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="lower-nav">
+      <a href="contact-us.html" class="nav-item">
+        <img src="contactus.jpg" alt="Contact Us" class="nav-logo">
+        Contact Us
+      </a>
+      <a href="https://instagram.com" class="nav-item">
+        <img src="instagram.jpg" alt="Instagram" class="nav-logo">
+        Instagram
+      </a>
+      <a href="https://twitter.com" class="nav-item">
+        <img src="twitter.png" alt="Twitter" class="nav-logo">
+        Twitter
+      </a>
+      <a href="https://facebook.com" class="nav-item">
+        <img src="facebook.png" alt="Facebook" class="nav-logo">
+        Facebook
+      </a>
+    </div>
+    <p>&copy; 2024 Games Portal. All rights reserved.</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

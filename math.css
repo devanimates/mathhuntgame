@@ -1,0 +1,300 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem .5rem;
+}
+
+h1 {
+    color: black;
+    margin: .5rem;
+    padding: .5rem;
+    display: block;
+    position: relative;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+}
+
+div.rules {
+    text-align: center;
+}
+
+.list {
+    text-align: center;
+    list-style-position: inside;
+    display: inline;
+}
+
+div#about h2 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+input {
+    width: 97%;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+textarea {
+    width: 97%;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+section#math-facts {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+section#numpad {
+    width: 100%;
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+button.btn {
+    padding: 20px;
+    margin: 2px;
+}
+
+input#field {
+    max-width: 180px;
+}
+
+button#resetbtn {
+    width: 114px;
+    height: 61px;
+}
+
+input#addfield {
+    max-width: 160px;
+}
+
+#terms input {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#terms label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+div#final-score {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 150px;
+}
+
+button#starting-page {
+    background-color: green;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+div#score {
+    width: 10px;
+    font-size: large;
+    font-weight: 800;
+}
+
+div#game-over-div {
+    display: none;
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* CSS for the dropdown menu */
+  nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  nav li:hover > ul {
+    display: block;
+  }
+
+  nav li ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav li ul li a {
+    display: block;
+  }
+
+  .lower-nav {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.nav-item {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #333;
+margin: 0 20px;
+}
+
+.nav-logo {
+width: 30px;
+height: 30px;
+margin-right: 10px;
+}
+
+footer {
+background-color: #f2f2f2;
+padding: 20px 0;
+text-align: center;
+font-size: 14px;
+color: #666;
+}
+
+/* CSS for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* CSS for the dropdown menu */
+  nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  nav li:hover > ul {
+    display: block;
+  }
+
+  nav li ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav li ul li a {
+    display: block;
+  }
+
+  /* CSS for the game listings */
+  .game-listing {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .game-listing img {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  /* CSS for the quote */
+  .quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .lower-nav {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.nav-item {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #333;
+margin: 0 20px;
+}
+
+.nav-logo {
+width: 30px;
+height: 30px;
+margin-right: 10px;
+}
